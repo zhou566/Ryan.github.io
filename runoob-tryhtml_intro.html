@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geek Profile - 安安</title>
+<style>
+  body, html {
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #08f;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #08f;
+  }
+  .profile-info {
+    text-align: left;
+  }
+  .profile-info h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #08f;
+  }
+  .profile-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 50px;
+  }
+  .rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .rain span {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #08f;
+    opacity: 0.5;
+    animation: codeRain linear infinite;
+  }
+  @keyframes codeRain {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Geek Profile - 安安</h1>
+  </div>
+  <div class="profile">
+    <img src="https://pb.nichi.co/craft--couple" alt="Profile Picture">
+    <div class="profile-info">
+      <h2>安安</h2>
+      <p>编程爱好者</p>
+      <p>B站：郑乃千古第一帝</p>
+    </div>
+  </div>
+  <div class="footer">
+    爱你们，爱我的妈妈
+  </div>
+</div>
+<div class="rain">
+  <!-- 生成代码雨 -->
+  <span style="top: 10%; left: 10%;">0x000000</span>
+  <span style="top: 20%; left: 20%;">0x0000FF</span>
+  <span style="top: 30%; left: 30%;">0x00FF00</span>
+  <!-- 更多代码雨 -->
+</div>
+</body>
+</html>
